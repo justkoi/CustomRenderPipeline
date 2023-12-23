@@ -7,6 +7,16 @@ namespace Assets.Custom_RP.Runtime
     public sealed class CustomRenderPipeine : RenderPipeline
     {
         private CameraRenderer renderer = new CameraRenderer();
+        private readonly bool useDynamicBatching;
+        private readonly bool useGPUInstancing;
+
+        public CustomRenderPipeine(
+        bool useDynamicBatching, bool useGPUInstancing, bool useSRPBatcher)
+        {
+            this.useDynamicBatching = useDynamicBatching;
+            this.useGPUInstancing = useGPUInstancing;
+            GraphicsSettings.useScriptableRenderPipelineBatching = useSRPBatcher;
+        }
 
         protected override void Render(
             ScriptableRenderContext context, Camera[] cameras
@@ -19,7 +29,7 @@ namespace Assets.Custom_RP.Runtime
         {
             for (int i = 0; i < cameras.Count; i++)
             {
-                this.renderer.Render(context, cameras[i]);
+                this.renderer.Render(context, cameras[i], this.useDynamicBatching, this.useGPUInstancing);
             }
         }
     }
