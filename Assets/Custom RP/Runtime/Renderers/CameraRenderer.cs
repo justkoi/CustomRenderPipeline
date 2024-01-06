@@ -10,6 +10,8 @@ public partial class CameraRenderer
 
     private static readonly string BUFFRE_NAME = "RenderCemera";
     private static readonly ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
+    private static readonly ShaderTagId litShaderTagId = new ShaderTagId("CustomLit");
+    private Lighting lighting = new Lighting();
 
     public void Render(ScriptableRenderContext context, Camera camera, bool useDynamicBatching, bool useGPUInstancing)
     {
@@ -28,7 +30,7 @@ public partial class CameraRenderer
         }
 
         this.Setup();
-
+        this.lighting.Setup(context, this.cullingResults);
         this.DrawVisibleGeometry(useDynamicBatching, useGPUInstancing);
         this.DrawUnsupportedShaders();
         this.DrawGizmos();
@@ -66,6 +68,7 @@ public partial class CameraRenderer
             enableDynamicBatching = useDynamicBatching,
             enableInstancing = useGPUInstancing
         };
+        drawingSettings.SetShaderPassName(1, litShaderTagId);
 
         var filteringSettings = new FilteringSettings(RenderQueueRange.opaque);
 
