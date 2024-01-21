@@ -4,8 +4,8 @@ public class MeshBall : MonoBehaviour
 {
     private static int
         baseColorId = Shader.PropertyToID("_BaseColor"),
-        metallicId = Shader.PropertyToID("_Metallic"),
-        smoothnessId = Shader.PropertyToID("_Smoothness");
+        metallicId = Shader.PropertyToID("_Metallic_A"),
+        smoothnessId = Shader.PropertyToID("_Smoothness_B");
 
     [SerializeField]
     private Mesh mesh = default;

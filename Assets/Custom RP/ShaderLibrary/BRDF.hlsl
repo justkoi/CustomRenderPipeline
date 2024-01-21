@@ -35,15 +35,24 @@ float3 DirectBRDF(Surface surface, BRDF brdf, Light light)
 BRDF GetBRDF(Surface surface, bool applyAlphaToDiffuse = false)
 {
     BRDF brdf;
-    float oneMinusReflectivity = OneMinusReflectivity(surface.metallic);
+    
+    float colorAverage = (surface.color.r + surface.color.g + surface.color.b) / 3.0;
+    if (colorAverage >= surface.materialMixingCutOff)
+    {
+        surface.materialMixingRatio = 1.0f;
+    }
+    float metallic = (surface.metallic_A * surface.materialMixingRatio) + (surface.metallic_B * (1 - surface.materialMixingRatio));
+    float smoothness = (surface.smoothness_A * surface.materialMixingRatio) + (surface.smoothness_B * (1 - surface.materialMixingRatio));
+    
+    float oneMinusReflectivity = OneMinusReflectivity(metallic);
     brdf.diffuse = surface.color * oneMinusReflectivity;
     if (applyAlphaToDiffuse)
     {
         brdf.diffuse *= surface.alpha;
     }
-    brdf.specular = lerp(MIN_REFLECTIVITY, surface.color, surface.metallic);
+    brdf.specular = lerp(MIN_REFLECTIVITY, surface.color, metallic);
     float perceptualRoughness =
-		PerceptualSmoothnessToPerceptualRoughness(surface.smoothness);
+		PerceptualSmoothnessToPerceptualRoughness(smoothness);
     brdf.roughness = PerceptualRoughnessToRoughness(perceptualRoughness);
     return brdf;
 

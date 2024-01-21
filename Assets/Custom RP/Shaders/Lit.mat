@@ -86,12 +86,17 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _LightingEnabled: 0
-    - _Metallic: 0
+    - _MaterialMixingRatio: 0.357
+    - _Metallic: 0.202
+    - _MetallicA: 0
+    - _MetallicB: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PremulAlpha: 0
-    - _Smoothness: 0.394
+    - _Smoothness: 0.206
+    - _SmoothnessA: 0.236
+    - _SmoothnessB: 0
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1

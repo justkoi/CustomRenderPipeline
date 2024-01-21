@@ -7,8 +7,12 @@ struct Surface
     float3 viewDirection;
     float3 color;
     float alpha;
-    float metallic;
-    float smoothness;
+    float metallic_A;
+    float smoothness_A;
+    float metallic_B;
+    float smoothness_B;
+    float materialMixingRatio;
+    float materialMixingCutOff;
 };
 
 #endif

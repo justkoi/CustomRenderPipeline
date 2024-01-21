@@ -55,9 +55,12 @@ float4 LitPassFragment(Varyings input) : SV_TARGET
     surface.viewDirection = normalize(_WorldSpaceCameraPos - input.positionWS);
     surface.color = base.rgb;
     surface.alpha = base.a;
-    surface.metallic = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic);
-    surface.smoothness =
-		UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness);
+    surface.metallic_A = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic_A);
+    surface.metallic_B = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic_B);
+    surface.smoothness_A = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness_A);
+    surface.smoothness_B = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness_B);
+    surface.materialMixingRatio = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _MaterialMixingRatio);
+    surface.materialMixingCutOff = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _MaterialMixingCutOff);
 #if defined(_PREMULTIPLY_ALPHA)
 		BRDF brdf = GetBRDF(surface, true);
 #else
