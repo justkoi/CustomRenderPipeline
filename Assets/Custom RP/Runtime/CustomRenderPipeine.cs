@@ -9,12 +9,13 @@ namespace Assets.Custom_RP.Runtime
         private CameraRenderer renderer = new CameraRenderer();
         private readonly bool useDynamicBatching;
         private readonly bool useGPUInstancing;
-
+        private ShadowSettings shadowSettings;
         public CustomRenderPipeine(
-        bool useDynamicBatching, bool useGPUInstancing, bool useSRPBatcher)
+        bool useDynamicBatching, bool useGPUInstancing, bool useSRPBatcher, ShadowSettings shadowSettings)
         {
             this.useDynamicBatching = useDynamicBatching;
             this.useGPUInstancing = useGPUInstancing;
+            this.shadowSettings = shadowSettings;
             GraphicsSettings.useScriptableRenderPipelineBatching = useSRPBatcher;
             GraphicsSettings.lightsUseLinearIntensity = true;
         }
@@ -30,7 +31,8 @@ namespace Assets.Custom_RP.Runtime
         {
             for (int i = 0; i < cameras.Count; i++)
             {
-                this.renderer.Render(context, cameras[i], this.useDynamicBatching, this.useGPUInstancing);
+                this.renderer.Render(context, cameras[i], this.useDynamicBatching, this.useGPUInstancing,
+                    shadowSettings);
             }
         }
     }
