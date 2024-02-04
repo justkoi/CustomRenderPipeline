@@ -55,12 +55,14 @@ float4 LitPassFragment(Varyings input) : SV_TARGET
 	surface.position = input.positionWS;
     surface.normal = normalize(input.normalWS);
     surface.viewDirection = normalize(_WorldSpaceCameraPos - input.positionWS);
+	surface.depth = -TransformWorldToView(input.positionWS).z;
     surface.color = base.rgb;
     surface.alpha = base.a;
     surface.metallic_A = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic_A);
     surface.metallic_B = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic_B);
     surface.smoothness_A = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness_A);
     surface.smoothness_B = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness_B);
+    surface.dither = InterleavedGradientNoise(input.positionCS.xy, 0);
     surface.materialMixingRatio = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _MaterialMixingRatio);
     surface.materialMixingCutOff = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _MaterialMixingCutOff);
 #if defined(_PREMULTIPLY_ALPHA)
