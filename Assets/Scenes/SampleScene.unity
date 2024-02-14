@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17907548, g: 0.22422731, b: 0.30602282, a: 1}
+  m_IndirectSpecularColor: {r: 0.17459315, g: 0.21837486, b: 0.30063003, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2309,7 +2309,7 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.5
+    m_Bias: 0.746
     m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
@@ -2357,13 +2357,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.66463166, y: -0.31796423, z: 0.5900393, w: -0.33017743}
+  m_LocalRotation: {x: -0.5996325, y: -0.40326536, z: 0.5390275, w: -0.432744}
   m_LocalPosition: {x: 0.03, y: 1.96, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -234.5, y: 81.516, z: -3.2600098}
+  m_LocalEulerAnglesHint: {x: -252.5, y: 81.516, z: -3.2600098}
 --- !u!1 &710128809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,7 +2519,7 @@ Transform:
   m_GameObject: {fileID: 718038843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -4.25, z: 21.63}
+  m_LocalPosition: {x: 4.08, y: -4.54, z: 21.63}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  cutoff: 0.5
+  cutoff: 0.463
   metallicA: 0.332
   smoothnessA: 0.41
   metallicB: 0.8
@@ -3224,13 +3224,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853300517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18014522, y: 0.7791687, z: -0.5415366, w: 0.25919488}
+  m_LocalRotation: {x: 0.18709028, y: 0.76423556, z: -0.5624143, w: 0.25422725}
   m_LocalPosition: {x: -0.9, y: 1.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -290.4, y: -216.8, z: 0}
+  m_LocalEulerAnglesHint: {x: -287.3, y: -216.8, z: 0}
 --- !u!1 &856138897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,7 +6183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  cutoff: 0.5
+  cutoff: 0.496
   metallicA: 0.332
   smoothnessA: 0.41
   metallicB: 0.8
@@ -7890,6 +7890,7 @@ GameObject:
   - component: {fileID: 1975455846}
   - component: {fileID: 1975455845}
   - component: {fileID: 1975455844}
+  - component: {fileID: 1975455848}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -7984,6 +7985,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1975455848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975455843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d00bdf6be381f498e737e64054083b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  cutoff: 0.5
+  metallicA: 0
+  smoothnessA: 0.516
+  metallicB: 0
+  smoothnessB: 0
+  materialMixingRatio: 0
+  materialMixingCutOff: 0
 --- !u!1 &2055925814
 GameObject:
   m_ObjectHideFlags: 0

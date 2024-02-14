@@ -130,6 +130,12 @@ float GetDirectionalShadowAttenuation(DirectionalShadowData directional, ShadowD
         positionSTS = mul(_DirectionalShadowMatrices[directional.tileIndex + 1], float4(surfaceWS.position + normalBias, 1.0)).xyz;
         shadow = lerp(FilterDirectionalShadow(positionSTS), shadow, global.cascadeBlend);
     }
+
+    if (shadow < 0.99)
+    {
+        float clampedMetalicA = clamp(surfaceWS.metallic_A, 0.3f, 0.7f);
+        shadow = lerp(1.0f, shadow, 1.0f-clampedMetalicA);
+    }
     
     return lerp(1.0, shadow, directional.strength);
 }

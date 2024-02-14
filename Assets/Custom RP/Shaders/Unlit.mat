@@ -14,8 +14,8 @@ Material:
   m_ValidKeywords:
   - _CLIPPING
   - _PREMULTIPLY_ALPHA
-  - _SHADOWS_CLIP
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _SHADOWS_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -92,14 +92,14 @@ Material:
     - _MaterialMixingCutOff: 0.5
     - _MaterialMixingRatio: 0.5
     - _Metallic: 0.64
-    - _MetallicA: 0.502
+    - _MetallicA: 0.52
     - _MetallicB: 0.522
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PremulAlpha: 1
     - _ReceiveShadows: 0
-    - _Shadows: 1
+    - _Shadows: 0
     - _Smoothness: 0.5
     - _SmoothnessA: 0.498
     - _SmoothnessB: 0.5
