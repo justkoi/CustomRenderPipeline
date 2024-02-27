@@ -36,13 +36,8 @@ BRDF GetBRDF(Surface surface, bool applyAlphaToDiffuse = false)
 {
     BRDF brdf;
     
-    float colorAverage = (surface.color.r + surface.color.g + surface.color.b) / 3.0;
-    if (colorAverage >= surface.materialMixingCutOff)
-    {
-        surface.materialMixingRatio = 1.0f;
-    }
-    float metallic = (surface.metallic_A * surface.materialMixingRatio) + (surface.metallic_B * (1 - surface.materialMixingRatio));
-    float smoothness = (surface.smoothness_A * surface.materialMixingRatio) + (surface.smoothness_B * (1 - surface.materialMixingRatio));
+    float metallic = surface.metallic;
+    float smoothness = surface.smoothness;
     
     float oneMinusReflectivity = OneMinusReflectivity(metallic);
     brdf.diffuse = surface.color * oneMinusReflectivity;

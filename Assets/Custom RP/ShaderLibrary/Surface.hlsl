@@ -9,12 +9,8 @@ struct Surface
     float3 color;
 	float3 position;
     float alpha;
-    float metallic_A;
-    float smoothness_A;
-    float metallic_B;
-    float smoothness_B;
-    float materialMixingRatio;
-    float materialMixingCutOff;
+    float metallic;
+    float smoothness;
 	float dither;
 };
 

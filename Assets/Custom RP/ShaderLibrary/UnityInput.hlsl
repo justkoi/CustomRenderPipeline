@@ -20,6 +20,9 @@ float4 unity_ProbeVolumeParams;
 float4x4 unity_ProbeVolumeWorldToObject;
 float4 unity_ProbeVolumeSizeInv;
 float4 unity_ProbeVolumeMin;
+bool4 unity_MetaFragmentControl;
+float unity_OneOverOutputBoost;
+float unity_MaxOutputValue;
 CBUFFER_END
 
 float4x4 unity_MatrixVP;

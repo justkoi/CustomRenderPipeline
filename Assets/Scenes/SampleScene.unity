@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 0.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -403,12 +403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &77880783
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -529,12 +526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &114184067
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -655,12 +649,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &142490072
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -853,7 +844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &181392912
 Light:
   m_ObjectHideFlags: 0
@@ -866,7 +857,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.98121965, b: 0.6179246, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -905,7 +896,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -980,12 +971,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &186916565
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1322,12 +1310,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &322145212
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1553,12 +1538,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &350980050
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1679,12 +1661,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &359044680
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1805,12 +1784,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &406740496
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1973,12 +1949,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &515782571
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2099,12 +2072,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &517374741
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2225,12 +2195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &550050793
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2351,12 +2318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &567156137
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2428,6 +2392,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567156134}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &605651255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605651259}
+  - component: {fileID: 605651258}
+  - component: {fileID: 605651257}
+  - component: {fileID: 605651256}
+  m_Layer: 0
+  m_Name: Cube (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!65 &605651256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605651255}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &605651257
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605651255}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68d9464d0cd4fbf48a81abf378167c7f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &605651258
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605651255}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &605651259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605651255}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 1.6, y: 7.84, z: 17.28}
+  m_LocalScale: {x: 2, y: 15, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &622500049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,12 +2588,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &637012397
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2844,12 +2910,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &710128812
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2970,12 +3033,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.463
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &718038846
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3138,12 +3198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &791163400
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3310,12 +3367,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.198
-  smoothnessA: 0.851
-  metallicB: 0.1
-  smoothnessB: 1
-  materialMixingRatio: 1
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &823084300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,12 +3419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &823084303
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3491,12 +3542,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &833888439
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3711,12 +3759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &856138900
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3837,12 +3882,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &867612134
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4057,12 +4099,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &890766975
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4183,12 +4222,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &903429672
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4278,8 +4314,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 1
+  m_IsActive: 0
 --- !u!135 &909283460
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4380,12 +4416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.596
-  metallicA: 0.266
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0.201
+  smoothness: 0.5
+  emissionColor: {r: 1, g: 0.7957734, b: 0, a: 1}
 --- !u!1 &952815868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,12 +4468,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &952815871
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4561,12 +4591,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &957763243
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4687,12 +4714,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &961229794
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4920,12 +4944,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1020449365
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5046,12 +5067,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1058947605
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5172,12 +5190,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1119979351
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5298,12 +5313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1124962930
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5424,12 +5436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1161690549
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5550,12 +5559,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1279824915
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5712,12 +5718,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1323986938
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5838,12 +5841,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1350549945
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5964,12 +5964,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1404218600
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6195,12 +6192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1438401997
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6321,12 +6315,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1469563915
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6447,12 +6438,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1526147829
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6615,12 +6603,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.496
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1577750448
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6741,12 +6726,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1598736647
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6867,12 +6849,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1629354902
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6993,12 +6972,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1740712494
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7119,12 +7095,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1807561365
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7350,12 +7323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1837204860
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7476,12 +7446,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1837606469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7602,12 +7569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1858093110
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7728,12 +7692,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1870351372
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7959,12 +7920,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1888742576
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8345,12 +8303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1943025807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8471,12 +8426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1948786132
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8597,12 +8549,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &1962056429
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8795,12 +8744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0
-  smoothnessA: 0.516
-  metallicB: 0
-  smoothnessB: 0
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &2055925814
 GameObject:
   m_ObjectHideFlags: 0
@@ -8850,12 +8796,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &2055925817
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8976,12 +8919,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &2059216720
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9102,12 +9042,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &2090186131
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9228,12 +9165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.596
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &2093244299
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9354,12 +9288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   cutoff: 0.5
-  metallicA: 0.332
-  smoothnessA: 0.41
-  metallicB: 0.8
-  smoothnessB: 0.8
-  materialMixingRatio: 0
-  materialMixingCutOff: 0
+  metallic: 0
+  smoothness: 0.5
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!135 &2115204083
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9541,6 +9472,7 @@ SceneRoots:
   - {fileID: 325258930}
   - {fileID: 1936244031}
   - {fileID: 1915039138}
+  - {fileID: 605651259}
   - {fileID: 69399648}
   - {fileID: 243492404}
   - {fileID: 777969800}
